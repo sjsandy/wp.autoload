@@ -1,0 +1,17 @@
+{
+    "name": "shawnsandy/al-manager-v3",
+    "description": "a simple wordpress autoloader",
+    "require": {
+        "guzzle/guzzle": "3.9.*@dev\""
+    },
+    "require-dev": {
+        "guzzle/guzzle": "3.9.*@dev\""
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shawn Sandy",
+            "email": "shawnsandy04@gmail.com"
+        }
+    ]
+}
