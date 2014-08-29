@@ -1,14 +1,14 @@
 <?php
 
 /*
-Plugin Name: WP.Autoload V.3.0
+Plugin Name: MP.Autoload
 Plugin URI: http://autoloadmanager.shawnsandy.com
-Description: Easily extend the power of WordPress using PHP classes and libraries; reduce code repetition and easily add external packages to your WordPress projects!
+Description: Use composer in wordpress to manage / autoload php libraies --- copy and paste the following line //** Composer Autoloader // `require_once (ABSPATH.'wp-content/plugins/mp-autoload/vendor/autoload.php')` above Sets up WordPress vars and included files.
 Author URI: http://shawnsandy.com
-Version: 2.0 Beta
+Version: 3.0 Beta
  */
 
-include_once __DIR__ .'vendor/symphony/class-loader/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+include_once __DIR__ .'/vendor/symfony/class-loader/Symfony/Component/ClassLoader/UniversalClassLoader.php';
 
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 
