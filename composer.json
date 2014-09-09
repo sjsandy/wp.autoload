@@ -16,6 +16,6 @@
         "mobiledetect/mobiledetectlib": "*"        
     },
     "autoload": {
-        "psr-4": {"MpLoader\\": "classes/"}
+        "psr-4": {"MpLoader\\": "src/"}
     }
 }
