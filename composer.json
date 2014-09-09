@@ -11,6 +11,11 @@
     "require": {
         "symfony/class-loader": "2.6.*@dev",
         "guzzlehttp/guzzle": "4.2.*@dev",
-        "monolog/monolog": "1.0.*"        
+        "guzzlehttp/oauth-subscriber": "*",
+        "monolog/monolog": "1.0.*",
+        "mobiledetect/mobiledetectlib": "*"        
+    },
+    "autoload": {
+        "psr-4": {"MpLoader\\": "classes/"}
     }
 }

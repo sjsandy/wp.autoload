@@ -13,6 +13,11 @@ Version: 3.0 Beta
  * wordpress plugin
  */
 
+$composer_autoload = __DIR__ .'/vendor/autoload.php';
+if (file_exists($composer_autoload)) {
+	require_once ($composer_autoload);
+}
+
 class mp_autoload {
 
 	private static $instance;
