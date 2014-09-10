@@ -1,5 +1,6 @@
 <?php namespace MpLoader\Admin;
 
+use MpLoader\Admin\Menu ;
 
 /**
  * Description of PostTypeMenu
@@ -116,7 +117,7 @@ class PostMenus {
      */
     public function nodes($post_type, $post_status, $node_title, $is_seperator = FALSE) {
 
-        $menu_node = MpLoader\Admin\Menu::factory();
+        $menu_node = Menu::factory();
 
         $node_id = $post_type . '-menu';
         $node_href = trailingslashit(admin_url()) . 'edit.php?post_type=' . $post_type;
@@ -163,7 +164,7 @@ class PostMenus {
         foreach ($post_data as $data):
             $item_href = esc_url(get_edit_post_link($data->ID));
             $item_id = $seperator_id . '-' . $data->ID;
-            Adminbar_Menu::factory()->set_node_parent($seperator_id)->node_item($item_id, $item_href, $data->post_title);
+            Menu::factory()->set_node_parent($seperator_id)->node_item($item_id, $item_href, $data->post_title);
         endforeach;
     }
 
