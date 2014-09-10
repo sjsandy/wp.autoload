@@ -1,12 +1,13 @@
-<?php
+<?php namespace MpLoader\Admin;
 
+use MpLoader\Admin\Menu ;
 
 /**
  * Description of PostTypeMenu
  *
  * @author studio
  */
-class Adminbar_PostMenus {
+class PostMenus {
 
     public function __construct() {
 
@@ -61,7 +62,7 @@ class Adminbar_PostMenus {
      * @return \Adminbar_PostMenus
      */
     public static function factory(){
-        $factory = new Adminbar_PostMenus();
+        $factory = new PostMenus();
         return $factory;
     }
 
@@ -78,7 +79,7 @@ class Adminbar_PostMenus {
 
                $this->list_count = 10;
 
-                $this->nodes($post_type, 'publish', $title);
+               $this->nodes($post_type, 'publish', $title);
 
             endif;
 
@@ -116,7 +117,7 @@ class Adminbar_PostMenus {
      */
     public function nodes($post_type, $post_status, $node_title, $is_seperator = FALSE) {
 
-        $menu_node = Adminbar_Menu::factory();
+        $menu_node = Menu::factory();
 
         $node_id = $post_type . '-menu';
         $node_href = trailingslashit(admin_url()) . 'edit.php?post_type=' . $post_type;
@@ -163,7 +164,7 @@ class Adminbar_PostMenus {
         foreach ($post_data as $data):
             $item_href = esc_url(get_edit_post_link($data->ID));
             $item_id = $seperator_id . '-' . $data->ID;
-            Adminbar_Menu::factory()->set_node_parent($seperator_id)->node_item($item_id, $item_href, $data->post_title);
+            Menu::factory()->set_node_parent($seperator_id)->node_item($item_id, $item_href, $data->post_title);
         endforeach;
     }
 
