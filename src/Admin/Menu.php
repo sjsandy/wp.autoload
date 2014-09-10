@@ -58,7 +58,7 @@ class Menu {
 	}
 
 	public static function factory() {
-		$factory = new \MpLoader\Admin\Menu();
+		$factory = new Menu();
 		return $factory;
 	}
 
