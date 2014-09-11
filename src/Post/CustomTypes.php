@@ -284,7 +284,7 @@ class CustomTypes {
     }
 
     public function category_tags_metabox() {
-       // add_action('init', array($this, '_category_tags_metabox'));
+        add_action('init', array($this, '_category_tags_metabox'));
     }
 
     public function _category_tags_metabox() {
