@@ -11,7 +11,7 @@ class Widget {
     
     public function __construct() {
         self::add_widget('sidebar', 'primary-sidebar','Main sidebar');
-        self::add_widget('secondary sidebar', 'secondary-sidebar','Main sidebar');
+        self::add_widget('secondary sidebar', 'secondary-sidebar','Secondary Sidebar');
     }
     
     public static function factory() {
