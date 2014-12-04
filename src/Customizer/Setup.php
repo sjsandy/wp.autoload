@@ -47,7 +47,7 @@ class Setup {
     }
 
     public static function factory($header_image = '', $background_image = '') {
-        $factory = new Customizer_Setup($header_image, $background_image);
+        $factory = new Setup($header_image, $background_image);
         return $factory;
     }
 
