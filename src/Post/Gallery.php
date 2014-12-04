@@ -5,7 +5,7 @@ use MpLoader\Post\PostQuery;
 /**
  * Description of Gallery
  *
- * @author studio
+ * @author shawnsandy
  */
 
 
