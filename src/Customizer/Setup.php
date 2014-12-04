@@ -4,7 +4,7 @@
 /**
  * Setup the theme customizer backgrouns and some defaults
  *
- * @author studio
+ * @author shawnsandy
  */
 class Setup {
 

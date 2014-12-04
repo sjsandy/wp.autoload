@@ -8,22 +8,23 @@
     "packages": [
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.5",
+            "version": "2.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "891324bde48a245be2213df82887dd7b1ea69dec"
+                "reference": "c68901fb09227dcf04872f0d6a27b9f6e75ecf1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/891324bde48a245be2213df82887dd7b1ea69dec",
-                "reference": "891324bde48a245be2213df82887dd7b1ea69dec",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/c68901fb09227dcf04872f0d6a27b9f6e75ecf1f",
+                "reference": "c68901fb09227dcf04872f0d6a27b9f6e75ecf1f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.0"
             },
             "require-dev": {
+                "johnkary/phpunit-speedtrap": "~1.0@dev",
                 "phpunit/phpunit": "*"
             },
             "type": "library",
@@ -56,7 +57,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2014-10-20 20:39:23"
+            "time": "2014-11-23 13:08:17"
         },
         {
             "name": "monolog/monolog",
@@ -103,17 +104,17 @@
         },
         {
             "name": "symfony/class-loader",
-            "version": "2.6.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/ClassLoader",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "d1a16139ea522ec3cc20801b7e19cd3cafd12d8c"
+                "reference": "91815b642f9639f5adac03714886433241cfe2ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/d1a16139ea522ec3cc20801b7e19cd3cafd12d8c",
-                "reference": "d1a16139ea522ec3cc20801b7e19cd3cafd12d8c",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/91815b642f9639f5adac03714886433241cfe2ec",
+                "reference": "91815b642f9639f5adac03714886433241cfe2ec",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +126,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -149,7 +150,7 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-12-02 20:20:06"
         }
     ],
     "packages-dev": [],
