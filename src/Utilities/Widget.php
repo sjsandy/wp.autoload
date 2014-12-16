@@ -15,11 +15,18 @@ class Widget {
     }
     
     public static function factory() {
-        $factory = new Widget();
-        return $factory;
+        
+        return new Widget();
     }
     
-    
+    public function create_default(){
+        
+    }
+        
+
+
+
+
     /**
      * Deprecated use register sidebar
      * @param type $name
