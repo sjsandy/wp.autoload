@@ -10,15 +10,20 @@ class Widget {
     //put your code here
     
     public function __construct() {
-        self::add_widget('sidebar', 'primary-sidebar','Main sidebar');
-        self::add_widget('secondary sidebar', 'secondary-sidebar','Secondary Sidebar');
+       
     }
     
     public static function factory() {
-        $factory = new Widget();
-        return $factory;
+        return new Widget();
+       
     }
     
+    
+    public function default_widget() {
+        self::add_widget('sidebar', 'primary-sidebar','Main sidebar');
+        self::add_widget('secondary sidebar', 'secondary-sidebar','Secondary Sidebar');
+    }
+        
     
     /**
      * Deprecated use register sidebar
