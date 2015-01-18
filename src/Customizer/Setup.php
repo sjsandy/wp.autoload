@@ -43,7 +43,7 @@ class Setup {
         add_theme_support('custom-background', $bj_theme_background);
 
         // add_action('customize_register', 'themename_customize_register');
-        add_action('admin_menu', array($this, 'custom_admin'));
+        //add_action('admin_menu', array($this, 'custom_admin'));
     }
 
     public static function factory($header_image = '', $background_image = '') {

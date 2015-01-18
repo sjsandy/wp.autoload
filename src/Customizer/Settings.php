@@ -122,6 +122,11 @@ class Settings {
     public function __construct() {
 
     }
+    
+    
+    public static function factory(){
+        return new Settings();
+    }
 
     /**
      * Create a new customizer section
@@ -133,7 +138,7 @@ class Settings {
      */
     public static function add_section($section_id = null, $section_title = 'Section Title', $section_description = '', $priority = 110) {
 
-        $factory = new Customizer_Settings();
+        $factory = new Settings();
 
         if (isset($section_id)):
             $factory->section_id = $section_id;
@@ -168,7 +173,7 @@ class Settings {
      */
     public static function add_option($section_id, $setting_name, $control_label, $setting_default = '') {
 
-        $option = new Customizer_Settings();
+        $option = new Settings();
 
         $option->section_id = $section_id;
 
@@ -294,7 +299,7 @@ class Settings {
 
     public function select_layout_content($wp_customize) {
         // header image control
-        $wp_customize->add_control(new Customizer_Control_Layoutcontent($wp_customize, $this->setting_name, array(
+        $wp_customize->add_control(new Control_Layoutcontent($wp_customize, $this->setting_name, array(
             'label' => $this->control_label,
             'section' => $this->section_id,
             'settings' => $this->setting_name
